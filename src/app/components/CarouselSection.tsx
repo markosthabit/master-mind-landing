@@ -96,13 +96,6 @@ export default function CarouselSection({ id, subsections }: CarouselSectionProp
         observeParents={true}
         // allow mouse dragging like touch
         simulateTouch={true}
-        // autoplay config
-        autoplay={{
-          delay: 4500,
-            disableOnInteraction: false, // keep autoplay after interaction
-                    pauseOnMouseEnter: true, //  pause on hover
-
-        }}
         pagination={{
           clickable: true,
         }}
