@@ -1,11 +1,20 @@
 @import "tailwindcss";
 @import "tailwindcss/preflight";
 @tailwind utilities;
+@theme{
+  --color-*: initial;
+  --color-darkBlue: #070C52;    /* midnight blue*/
+  --color-lightPurple: #BEB6FF;   /* melrose */
+  --color-lightBlue: #5BB0FF;    /* malibu */
+  --color-softWhite: #e6e6e6;
+}
 
 html, body {
   height: 100%;
    margin: 0;
   padding: 0;
+  background-color: var(--color-darkBlue);
+  color: var(--color-softWhite);
   scroll-behavior: smooth;
 
 
