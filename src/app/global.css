@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@import "tailwindcss/preflight";
+
 @tailwind utilities;
 @theme{
   --color-*: initial;
@@ -7,11 +7,14 @@
   --color-lightPurple: #BEB6FF;   /* melrose */
   --color-lightBlue: #5BB0FF;    /* malibu */
   --color-softWhite: #e6e6e6;
+  
+
+
 }
 
 html, body {
   height: 100%;
-   margin: 0;
+  margin: 0;
   padding: 0;
   background-color: var(--color-darkBlue);
   color: var(--color-softWhite);
@@ -20,6 +23,9 @@ html, body {
 
 }
 
+.font-sans {
+  font-family: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
+}
 
 .scrollbar-modern {
   scrollbar-width: thin; /* Firefox */
