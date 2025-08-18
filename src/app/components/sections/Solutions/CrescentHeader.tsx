@@ -1,11 +1,18 @@
 import Image from 'next/image';
+import { ComponentProps, ElementType } from 'react';
+
+interface CrescentHeaderProps {
+  as?: ElementType;
+  children: React.ReactNode;
+  className?: string;
+}
 
 const CrescentHeader = ({ 
   as: Tag = 'h1', 
   children, 
   className = '', 
   ...props 
-}) => {
+}: CrescentHeaderProps & ComponentProps<'h1'>) => {
   return (
     <div className="relative w-full" style={{ height: '164px' }}> {/* Fixed height matching image */}
       <div className="absolute left-0 top-1/2 -translate-y-1/2 z-0">

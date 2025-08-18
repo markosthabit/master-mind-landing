@@ -1,3 +1,11 @@
+interface CustomCardProps {
+  title: string;
+  children: React.ReactNode;
+  titleClassName?: string;
+  textClassName?: string;
+  className?: string;
+}
+
 const CustomCard = ({ 
   title, 
   children,
@@ -5,7 +13,7 @@ const CustomCard = ({
   textClassName = '',
   className = '',
   ...props 
-}) => {
+}: CustomCardProps & React.HTMLAttributes<HTMLDivElement>) => {
   return (
     <div className={` ${className}`} {...props}>
       <h3 className={`font-bold text-lightBlue ${titleClassName}`} >
@@ -21,4 +29,5 @@ const CustomCard = ({
     </div>
   );
 };
+
 export default CustomCard;

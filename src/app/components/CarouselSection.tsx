@@ -1,4 +1,3 @@
-// app/components/CarouselSection.tsx
 "use client";
 
 import { ComponentType, useRef, useEffect } from "react";
@@ -9,9 +8,10 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 
+// Make Component property optional with ? to match SectionItem
 interface SlideDef {
   id: string;
-  Component: ComponentType<Record<string, unknown>>; // Changed from any to Record<string, unknown>
+  Component?: ComponentType<object>; // Made optional with ?
 }
 
 interface CarouselSectionProps {
@@ -106,8 +106,8 @@ export default function CarouselSection({ id, subsections }: CarouselSectionProp
       >
         {subsections.map(({ id: subId, Component }) => (
           <SwiperSlide key={subId} className="flex items-center justify-center px-6">
-            {/* render slide content */}
-            <Component />
+            {/* render slide content - only if Component exists */}
+            {Component ? <Component /> : <div>Component not available</div>}
           </SwiperSlide>
         ))}
       </Swiper>
