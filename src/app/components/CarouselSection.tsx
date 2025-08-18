@@ -1,3 +1,4 @@
+// app/components/CarouselSection.tsx
 "use client";
 
 import { ComponentType, useRef, useEffect } from "react";
@@ -33,13 +34,13 @@ export default function CarouselSection({ id, subsections }: CarouselSectionProp
     // Some setups need explicit loopedSlides set to number of slides to make
     // looping reliable (especially with custom effects or dynamic slides).
     try {
-      // @ts-expect-error - runtime assignment for some Swiper versions
+      // @ts-expect-error - Swiper params types don't always include loopedSlides
       if (swiper.params && swiper.params.loop && !swiper.params.loopedSlides) {
         // set to number of real slides
         // this is safe even if the property isn't used by your Swiper version
         // and helps in some versions where loop didn't clone correctly.
          
-        // @ts-expect-error
+        // @ts-expect-error - Runtime assignment for Swiper loopedSlides property
         swiper.params.loopedSlides = subsections.length;
       }
     } catch (e) {
