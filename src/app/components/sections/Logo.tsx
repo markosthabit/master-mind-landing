@@ -10,7 +10,7 @@ export default function Logo() {
     >
       <div className="relative w-[60vw] h-[60vw] max-w-[300px] max-h-[300px] sm:max-w-[400px] sm:max-h-[400px]">
         <Image
-          src="/splash.png"
+          src="/images/splash.png"
           alt="Logo"
           fill
           className="object-contain"
