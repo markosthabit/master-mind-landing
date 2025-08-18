@@ -1,4 +1,3 @@
-// app/components/CarouselSection.tsx
 "use client";
 
 import { ComponentType, useRef, useEffect } from "react";
@@ -11,7 +10,7 @@ import "swiper/css/effect-fade";
 
 interface SlideDef {
   id: string;
-  Component: ComponentType<any>;
+  Component: ComponentType<Record<string, unknown>>; // Changed from any to Record<string, unknown>
 }
 
 interface CarouselSectionProps {
@@ -34,13 +33,13 @@ export default function CarouselSection({ id, subsections }: CarouselSectionProp
     // Some setups need explicit loopedSlides set to number of slides to make
     // looping reliable (especially with custom effects or dynamic slides).
     try {
-      // @ts-ignore - runtime assignment for some Swiper versions
+      // @ts-expect-error - runtime assignment for some Swiper versions
       if (swiper.params && swiper.params.loop && !swiper.params.loopedSlides) {
         // set to number of real slides
         // this is safe even if the property isn't used by your Swiper version
         // and helps in some versions where loop didn't clone correctly.
          
-        // @ts-ignore
+        // @ts-expect-error
         swiper.params.loopedSlides = subsections.length;
       }
     } catch (e) {
@@ -80,10 +79,9 @@ export default function CarouselSection({ id, subsections }: CarouselSectionProp
         if (e.key === "ArrowLeft") swiperRef.current?.slidePrev();
       }}
     >
-         {/* Subtle edge shading */}
+      {/* Subtle edge shading */}
       <div className="pointer-events-none absolute left-0 top-0 h-full w-12 bg-gradient-to-r from-black/10 to-transparent z-10" />
       <div className="pointer-events-none absolute right-0 top-0 h-full w-12 bg-gradient-to-l from-black/10 to-transparent z-10" />
-
 
       <Swiper
         modules={[Pagination, EffectFade, Autoplay]}

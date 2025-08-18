@@ -1,4 +1,4 @@
-"useClient";
+"use client";
 import Logo from "@/app/components/sections/Logo";
 import Home from "@/app/components/sections/Home";
 
@@ -31,22 +31,20 @@ import {
 import Contact from "@/app/components/sections/Contact";
 
 // ---------- Types ----------
-// app/sectionsRegistry.ts
-import { ComponentType } from "react";
+import { ComponentType, JSXElementConstructor } from "react";
 
 export interface SectionItem {
   id: string;
-  Component?: ComponentType<any>;
+  Component?: ComponentType<object>;
   subsections?: {
     id: string;
-    Component: ComponentType<any>;
+    Component: ComponentType<object>;
   }[];
 }
 
-
 export interface Section {
   id: string;
-  Component?: React.ComponentType<any>;
+  Component?: ComponentType<object>;
   subsections?: SectionItem[];
 }
 
