@@ -1,5 +1,5 @@
 // Solutions.jsx (Updated for responsiveness)
-import CrescentHeader from "../../CrescentHeader";
+import CrescentHeader from "./CrescentHeader";
 
 export default function Solutions() {
   return (
