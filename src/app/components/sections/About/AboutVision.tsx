@@ -16,17 +16,6 @@ export default function AboutVision() {
       id="about-vision"
       className="min-h-screen bg-[#0A0F54] flex flex-col items-center justify-center px-6 py-20 text-white"
     >
-      {/* About us */}
-      <motion.h3
-        variants={textVariant}
-        initial="hidden"
-        whileInView="visible"
-        custom={0}
-        viewport={{ once: false, amount: 0.4 }}
-        className="text-lg font-semibold mb-10"
-      >
-        About us
-      </motion.h3>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 w-full max-w-6xl">
         {/* Left text */}
