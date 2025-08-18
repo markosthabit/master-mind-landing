@@ -15,7 +15,7 @@ export default function AboutSection() {
       <AboutWeAre />   
       <AboutHistory />
       <AboutVision />
-        <AboutIntro />
+      <AboutIntro />
     </>
   );
 }
