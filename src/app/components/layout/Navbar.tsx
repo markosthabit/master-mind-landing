@@ -1,4 +1,3 @@
-// components/Navbar.tsx
 "use client";
 import { useEffect, useState } from "react";
 import clsx from "clsx";
@@ -7,10 +6,9 @@ const sections = ["home", "about", "values", "solutions", "contact"];
 
 export default function Navbar() {
   const [active, setActive] = useState("home");
-  const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const allSections = ["logo", ...sections];
+    const allSections = [...sections];
     const observers: IntersectionObserver[] = [];
 
     allSections.forEach((id) => {
@@ -21,7 +19,6 @@ export default function Navbar() {
         ([entry]) => {
           if (entry.isIntersecting) {
             setActive(id);
-            setVisible(id !== "logo"); // hide navbar if logo is active
           }
         },
         { threshold: 0.6 }
@@ -36,8 +33,7 @@ export default function Navbar() {
   return (
     <nav
       className={clsx(
-        "fixed top-0 left-0 w-full bg-grey/80 backdrop-blur-md shadow transition z-50",
-        visible ? "opacity-100" : "opacity-0 pointer-events-none"
+        "fixed top-0 left-0 w-full bg-grey/80 backdrop-blur-md shadow transition z-50 opacity-100"
       )}
     >
       <ul className="flex justify-center gap-8 py-3">
