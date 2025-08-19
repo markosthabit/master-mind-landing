@@ -20,6 +20,7 @@ const CustomCard = ({
         {title}
       </h3>
       <div className="flex items-center">
+        {/* Use borders instead */}
         <span className="font-light text-white mr-2 text-5xl leading-relaxed">|</span>
         
         <p className={`text-softWhite font-extralight ${textClassName}`} style={{ width: '50%' }}>
