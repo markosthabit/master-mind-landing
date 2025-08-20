@@ -1,9 +1,26 @@
 import SectionWrapper from "../../SectionWrapper";
 import CrescentHeader from "./CrescentHeader";
+import Image from "next/image";
 export default function EventPlanning() {
   return (
     <SectionWrapper id="solution-eventExecution">
       <div className="grid grid-cols-12 gap-6 ">
+        {/* Overlay  Right */}
+                <Image
+                  src="/images/top-right-overlay.png"
+                  alt=""
+                  width={1024}
+                  height={1024}
+                  className="absolute -top-18/32 -right-12/32 object-contain pointer-events-none"
+                />
+                {/* Overlay Left  */}
+                <Image
+                  src="/images/speaker.png"
+                  alt=""
+                  width={480}
+                  height={1024}
+                  className="absolute right-0 top-0 h-screen object-cover pointer-events-none -z-10"
+                />
         <div className="col-span-12 w-screen">
           <CrescentHeader
             as="h2"
@@ -16,7 +33,7 @@ export default function EventPlanning() {
         </div>
         <div className="col-start-2 col-span-8">
           <h2 className="text-3xl font-bold text-lightBlue">
-            “Planning → Setup → Event Day → Editing → Press Coverage.”
+            “Planning → Setup → Event Day →<br /> Editing → Press Coverage.”
           </h2>
         </div>
 

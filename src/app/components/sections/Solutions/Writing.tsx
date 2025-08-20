@@ -1,9 +1,34 @@
 import SectionWrapper from "../../SectionWrapper";
 import CrescentHeader from "./CrescentHeader";
+import Image from "next/image";
 export default function Writing() {
   return (
     <SectionWrapper id="solution-writing">
       <div className="grid grid-cols-12 gap-6">
+        {/* Overlay  Right */}
+                <Image
+                  src="/images/doctor-pointing.png"
+                  alt=""
+                  width={640}
+                  height={640}
+                  className="absolute top-4/32 -right-3/32 object-contain pointer-events-none transform -scale-x-100 -z-10"
+                />
+                <Image
+                  src="/images/cloud-rainbow.png"
+                  alt=""
+                  width={728}
+                  height={728}
+                  className="absolute top-17/32 -right-6/32 object-contain pointer-events-none transform -scale-x-100 -z-10"
+                />
+        
+                {/* Overlay Left  */}
+                <Image
+                  src="/images/left-overlay.png"
+                  alt=""
+                  width={700}
+                  height={700}
+                  className="absolute right-23/32 -top-1/8 object-contain pointer-events-none -z-50"
+                />
         <div className="col-span-12 w-screen">
           <CrescentHeader
             as="h2"

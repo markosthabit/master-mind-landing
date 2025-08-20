@@ -1,9 +1,27 @@
 // Solutions.jsx (Updated for responsiveness)
 import CrescentHeader from "./CrescentHeader";
+import Image from "next/image";
 
 export default function Solutions() {
   return (
     <div className="text-center space-y-4">
+            {/* Overlay  Right */}
+            <Image
+              src="/images/top-right-overlay.png"
+              alt=""
+              width={728}
+              height={728}
+              className="absolute -top-64 -right-64 object-contain pointer-events-none"
+      />
+            {/* Overlay Left  */}
+            <Image
+              src="/images/large-left-overlay.png"
+              alt=""
+              width={2400}
+        height={2400}
+        className="absolute right-10/16 -top-5/8 object-contain pointer-events-none"
+            />
+      
       <div>
         <h1 className="text-2xl sm:text-3xl md:text-7xl font-bold text-lightBlue">
           <span className="font-light">OUR </span>

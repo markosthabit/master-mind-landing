@@ -6,16 +6,45 @@ export default function Logo() {
   return (
     <section
       id="logo"
-      className="min-h-screen w-full flex items-center justify-center bg-yellow-600"
+      className="relative min-h-screen w-full flex items-center justify-center bg-black overflow-hidden"
     >
-      <div className="relative w-[60vw] h-[60vw] max-w-[300px] max-h-[300px] sm:max-w-[400px] sm:max-h-[400px]">
-        <Image
-          src="/images/splash.png"
-          alt="Logo"
-          fill
-          className="object-contain"
-          priority
-        />
+      {/* Overlay Top Right */}
+      <Image
+        src="/images/top-right-overlay.png"
+        alt=""
+        width={728}
+        height={728}
+        className="absolute -top-128 -right-48 object-contain pointer-events-none"
+      />
+
+      {/* Overlay Left Half */}
+      <Image
+        src="/images/left-overlay.png"
+        alt=""
+        width={1200}
+        height={1200}
+        className="absolute right-2/4 -top-64 object-contain pointer-events-none opacity-60"
+      />
+
+      {/* Main Content */}
+      <div className="relative z-10">
+        <div className="flex flex-col items-center text-center gap-4 md:flex-row md:items-center md:text-left md:gap-6">
+          <Image
+            src="/images/logo.png"
+            alt="Logo"
+            width={164}
+            height={164}
+            className="object-contain w-24 h-24 md:w-[164px] md:h-[164px]"
+          />
+          <div>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl text-softWhite font-bold leading-tight">
+              MASTER <br /> MIND
+            </h1>
+            <p className="text-lg sm:text-xl">
+              Mastering <span className="text-lightPurple">Innovation</span>
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   );
