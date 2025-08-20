@@ -22,18 +22,7 @@ export default function AboutHistroy() {
         tailored, every design intentional, and every deliverable executed to
         perfection.
       </motion.p>
-
-      {/* Paragraph 2 */}
-      <motion.p
-        className="text-white text-lg md:text-xl max-w-3xl mx-auto mt-6 leading-relaxed"
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, delay: 0.8 }}
-      >
-        We don’t follow trends — we build them. <br />
-        We don’t just communicate — we connect. <br />
-        We don’t just deliver — we elevate.
-      </motion.p>
+      
     </SectionWrapper>
   );
 }
