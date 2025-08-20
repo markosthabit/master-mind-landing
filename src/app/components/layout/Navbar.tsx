@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import clsx from "clsx";
+import Image from "next/image";
 
 const sections = ["home", "about", "values", "solutions", "contact"];
 
@@ -30,27 +31,61 @@ export default function Navbar() {
     return () => observers.forEach((o) => o.disconnect());
   }, []);
 
+  const navLabels: Record<string, string> = {
+    home: "Home",
+    about: "About us", 
+    values: "Our Values",
+    solutions: "Our Solutions",
+    contact: "Contact us"
+  };
+
   return (
     <nav
-      className={clsx(
-        "fixed top-0 left-0 w-full bg-grey/80 backdrop-blur-md shadow transition z-50 opacity-100"
-      )}
+      className="fixed top-0 left-0 w-full z-50 py-4 px-6 bg-darkBlue"
     >
-      <ul className="flex justify-center gap-8 py-3">
-        {sections.map((id) => (
-          <li key={id}>
-            <a
-              href={`#${id}`}
-              className={clsx(
-                "uppercase font-medium transition",
-                active === id ? "text-lightPurple" : "text-softWhite"
-              )}
+      <div className="max-w-7xl mx-auto flex items-center justify-between">
+          {/* Logo */}
+        <div className="flex items-center gap-3">
+          {/* Logo Icon */}
+          <div className="w-8 h-8 flex items-center justify-center" style={{ marginLeft: '.5cm' }}>
+            <Image src="/images/logo.png" alt="logo" width={90} height={90} />
+          </div>
+          {/* Logo Text */}
+          <div className="flex items-center gap-1">
+            <span 
+              className="font-bold text-xl"
+              style={{ color: 'var(--color-softWhite)' }}
             >
-              {id}
-            </a>
-          </li>
-        ))}
-      </ul>
+              Master
+            </span>
+            <span 
+              className="font-normal text-xl"
+              style={{ color: 'var(--color-lightBlue)' }}
+            >
+              Mind
+            </span>
+          </div>
+        </div>
+        {/* Navigation Links */}
+        <ul className="flex items-center gap-8">
+          {sections.map((id) => (
+            <li key={id}>
+              <a
+                href={`#${id}`}
+                className={clsx(
+                  "font-bold transition-colors duration-300 hover:opacity-80",
+                )}
+                style={{
+                  color: active === id ? 'var(--color-lightBlue)' : 'var(--color-softWhite)',
+                  fontSize: '1.1rem'
+                }}
+              >
+                {navLabels[id]}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
     </nav>
   );
 }
