@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-
+import Image from "next/image";
 const textVariant = {
   hidden: { opacity: 0, y: 40 },
   visible: (i: number) => ({
@@ -14,9 +14,22 @@ export default function AboutVision() {
   return (
     <section
       id="about-vision"
-      className="min-h-screen flex flex-col items-center justify-center px-6 py-20 text-white"
+      className="h-screen relative flex flex-col items-center justify-center px-6 py-20 text-white"
     >
-
+            <Image
+              src="/images/top-right-overlay.png"
+              alt=""
+              width={728}
+              height={728}
+              className="absolute -top-128 -right-48 object-contain pointer-events-none -z-10"
+            />
+    <Image
+          src="/images/left-overlay.png"
+          alt=""
+          width={700}
+          height={700}
+          className="absolute right-23/32 -top-1/8 object-contain pointer-events-none -z-50"
+        />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 w-full max-w-6xl">
         {/* Left text */}
         <motion.div

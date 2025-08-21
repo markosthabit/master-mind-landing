@@ -2,10 +2,18 @@
 
 import { motion } from "framer-motion";
 import SectionWrapper from "../../SectionWrapper";
+import Image from "next/image";
 
 export default function AboutIntro() {
   return (
     <SectionWrapper id="about-intro" className="text-center">
+          <Image
+                src="/images/left-overlay.png"
+                alt=""
+                width={700}
+                height={700}
+                className="absolute right-23/32 -top-1/8 object-contain pointer-events-none -z-50"
+              />
       <div className="flex flex-col items-center"> {/* 👈 wrapper ensures vertical stack */}
 
         {/* Main Heading */}
