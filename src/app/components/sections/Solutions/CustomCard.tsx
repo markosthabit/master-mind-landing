@@ -20,7 +20,7 @@ const CustomCard = ({
         {title}
       </h3>
       <div className="flex items-center">        
-        <p className={`text-softWhite font-extralight border-l-6 p-2 ${textClassName}`} style={{ width: '60%' }}>
+        <p className={`text-softWhite font-extralight border-l-6 p-2 ${textClassName}`} style={{ width: '70%' }}>
           {children}
         </p>
       </div>
