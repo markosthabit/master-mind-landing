@@ -44,14 +44,14 @@ export default function Branding() {
           BRANDING <span className="font-medium">&nbsp;SOLUTIONS</span>
         </CrescentHeader>
 
-        <p className="text-base sm:text-lg md:text-xl font-bold text-center max-w-4xl mx-auto ">
+        <p className="text-base sm:text-lg md:text-xl font-bold text-center max-w-4xl mx-auto z-30 ">
           Our branding solutions encompass all stages of brand development,
           including concept creation, visual identity design, storytelling, and
           asset production.
         </p>
 
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-y-8 gap-x-16 max-w-4xl mx-auto  ">
-          <ul className="space-y-6">
+        <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-16 max-w-4xl mx-auto  ">
+          <ul className="space-y-4">
             <li>
               <CustomCard
                 title="Concept Creation"
@@ -81,7 +81,7 @@ export default function Branding() {
             </li>
           </ul>
 
-          <ul className="space-y-6">
+          <ul className="space-y-4">
             <li>
               <CustomCard
                 title="Narrative & Storytelling"
