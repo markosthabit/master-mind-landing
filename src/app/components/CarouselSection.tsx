@@ -28,9 +28,9 @@ export default function CarouselSection({ id, subsections }: CarouselSectionProp
   const onSwiperInit = (swiper: SwiperType) => {
     swiperRef.current = swiper;
     try {
-      // @ts-expect-error
+      // @ts-expect-error - Swiper params types don't always include loopedSlides property
       if (swiper.params && swiper.params.loop && !swiper.params.loopedSlides) {
-        // @ts-expect-error
+        // @ts-expect-error - Runtime assignment for Swiper loopedSlides property
         swiper.params.loopedSlides = subsections.length;
       }
     } catch (e) {
@@ -54,40 +54,39 @@ export default function CarouselSection({ id, subsections }: CarouselSectionProp
   };
 
   return (
-<div
-  className="h-[calc(100vh-4rem)] w-full relative"
-  onClick={handleClick}
-  role="button"
-  tabIndex={0}
-  onKeyDown={(e) => {
-    if (e.key === "ArrowRight") swiperRef.current?.slideNext();
-    if (e.key === "ArrowLeft") swiperRef.current?.slidePrev();
-  }}
->
-  <div className="pointer-events-none absolute left-0 top-0 h-full w-12 bg-gradient-to-r from-black/10 to-transparent z-10" />
-  <div className="pointer-events-none absolute right-0 top-0 h-full w-12 bg-gradient-to-l from-black/10 to-transparent z-10" />
+    <div
+      className="h-[calc(100vh-4rem)] w-full relative"
+      onClick={handleClick}
+      role="button"
+      tabIndex={0}
+      onKeyDown={(e) => {
+        if (e.key === "ArrowRight") swiperRef.current?.slideNext();
+        if (e.key === "ArrowLeft") swiperRef.current?.slidePrev();
+      }}
+    >
+      <div className="pointer-events-none absolute left-0 top-0 h-full w-12 bg-gradient-to-r from-black/10 to-transparent z-10" />
+      <div className="pointer-events-none absolute right-0 top-0 h-full w-12 bg-gradient-to-l from-black/10 to-transparent z-10" />
 
-  <Swiper
-    modules={[Pagination, EffectFade, Autoplay]}
-    slidesPerView={1}
-    spaceBetween={30}
-    loop={true}
-    observer={true}
-    observeParents={true}
-    simulateTouch={true}
-    pagination={{ clickable: true }}
-    effect="fade"
-    fadeEffect={{ crossFade: true }}
-    onSwiper={onSwiperInit}
-    className="h-full w-full"
-  >
-    {subsections.map(({ id: subId, Component }) => (
-      <SwiperSlide key={subId} className="flex items-center justify-center px-6">
-        {Component ? <Component /> : <div>Component not available</div>}
-      </SwiperSlide>
-    ))}
-  </Swiper>
-</div>
-
+      <Swiper
+        modules={[Pagination, EffectFade, Autoplay]}
+        slidesPerView={1}
+        spaceBetween={30}
+        loop={true}
+        observer={true}
+        observeParents={true}
+        simulateTouch={true}
+        pagination={{ clickable: true }}
+        effect="fade"
+        fadeEffect={{ crossFade: true }}
+        onSwiper={onSwiperInit}
+        className="h-full w-full"
+      >
+        {subsections.map(({ id: subId, Component }) => (
+          <SwiperSlide key={subId} className="flex items-center justify-center px-6">
+            {Component ? <Component /> : <div>Component not available</div>}
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
   );
 }
