@@ -34,7 +34,7 @@ export default function Solutions() {
       </div>
       
       <div className="pt-8 sm:pt-16">
-        <ul className="flex flex-wrap justify-center items-center gap-4 sm:gap-x-8 md:gap-x-48 gap-y-16 md:gap-y-36">
+        <ul className="flex flex-wrap justify-center items-center gap-4 sm:gap-x-8 md:gap-x-48 gap-y-16 md:gap-y-36 p-6">
           <li className="w-[150px] sm:w-[200px] md:w-[250px]"> {/* Responsive widths */}
             <CrescentHeader as="h2" className="text-xl sm:text-2xl md:text-3xl font-bold text-center">
               BRANDING
@@ -52,6 +52,8 @@ export default function Solutions() {
               OMNICHANNEL
             </CrescentHeader>
           </li>
+        </ul>
+        <ul className="flex flex-wrap justify-center items-center gap-4 sm:gap-x-8 md:gap-x-48 gap-y-16 md:gap-y-36 p-6">
           
           <li className="w-[150px] sm:w-[200px] md:w-[250px]">
             <CrescentHeader as="h2" className="text-xl sm:text-2xl md:text-3xl font-bold text-center">

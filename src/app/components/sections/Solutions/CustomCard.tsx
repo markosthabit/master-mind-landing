@@ -19,11 +19,8 @@ const CustomCard = ({
       <h3 className={`font-bold text-lightBlue ${titleClassName}`} >
         {title}
       </h3>
-      <div className="flex items-center">
-        {/* Use borders instead */}
-        <span className="font-light text-white mr-2 text-5xl leading-relaxed">|</span>
-        
-        <p className={`text-softWhite font-extralight ${textClassName}`} style={{ width: '50%' }}>
+      <div className="flex items-center">        
+        <p className={`text-softWhite font-extralight border-l-6 p-2 ${textClassName}`} style={{ width: '60%' }}>
           {children}
         </p>
       </div>
