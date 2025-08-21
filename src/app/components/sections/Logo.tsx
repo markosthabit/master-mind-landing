@@ -6,7 +6,7 @@ export default function Logo() {
   return (
     <section
       id="logo"
-      className="relative min-h-screen w-full flex items-center justify-center overflow-hidden"
+      className="relative min-h-[calc(100vh-4rem)] top-16 w-full flex items-center justify-center overflow-hidden"
     >
       {/* Overlay Top Right */}
       <Image

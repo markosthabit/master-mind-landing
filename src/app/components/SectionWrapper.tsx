@@ -10,15 +10,18 @@ type SectionWrapperProps = {
 
 export default function SectionWrapper({ id, children, className }: SectionWrapperProps) {
   return (
-    <motion.section
-      id={id}
-      className={`h-screen flex items-center justify-center scroll-snap-start ${className || ""}`}
-      initial={{ opacity: 0, y: 60 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: false, amount: 0.6 }}
-      transition={{ duration: 0.8 }}
-    >
-      {children}
-    </motion.section>
+<motion.section
+  id={id}
+      className={`min-h-[calc(100vh-4rem)] flex items-center justify-center scroll-snap-start ${className || ""}`}
+        style={{ scrollMarginTop: "8rem" }}
+
+  initial={{ opacity: 0, y: 60 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: false, amount: 0.6 }}
+  transition={{ duration: 0.8 }}
+>
+  {children}
+</motion.section>
+
   );
 }
