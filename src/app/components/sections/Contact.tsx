@@ -2,7 +2,8 @@ import Image from "next/image";
 // components/sections/Contact.tsx
 export default function Contact() {
   return (
-    <div className="relative text-left w-28/32 h-28/32 space-y-4 rounded-4xl bg-linear-65 from-darkPurple to-mediumPurple p-32">
+    
+    <div className="relative text-left w-28/32 h-28/32 space-y-4 rounded-4xl bg-linear-65 from-darkPurple to-mediumPurple p-32 overflow-hidden ">
       {/* Overlay  Right */}
       <Image
         src="/images/phone-mind.png"
