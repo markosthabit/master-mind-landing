@@ -9,7 +9,7 @@ export default function AboutHistroy() {
 
       {/* Paragraph 1 */}
       <motion.p
-        className="text-white text-lg md:text-xl max-w-3xl mx-auto mt-6 leading-relaxed"
+        className="text-white font-bold text-2xl md:text-3xl max-w-4xl mx-auto mt-6 leading-relaxed"
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.6 }}

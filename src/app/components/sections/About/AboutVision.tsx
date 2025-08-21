@@ -14,7 +14,7 @@ export default function AboutVision() {
   return (
     <section
       id="about-vision"
-      className="min-h-screen bg-[#0A0F54] flex flex-col items-center justify-center px-6 py-20 text-white"
+      className="min-h-screen flex flex-col items-center justify-center px-6 py-20 text-white"
     >
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 w-full max-w-6xl">
@@ -45,7 +45,7 @@ export default function AboutVision() {
             custom={2}
             viewport={{ once: false, amount: 0.4 }}
           >
-            <h3 className="text-3xl font-extrabold text-sky-400 mb-3">
+            <h3 className="text-5xl font-extrabold text-sky-400 mb-3">
               Our Vision
             </h3>
             <p className="text-lg text-gray-200 leading-relaxed border-l-4 border-sky-400 pl-4">
@@ -63,7 +63,7 @@ export default function AboutVision() {
             custom={3}
             viewport={{ once: false, amount: 0.4 }}
           >
-            <h3 className="text-3xl font-extrabold text-sky-400 mb-3">
+            <h3 className="text-5xl font-extrabold text-sky-400 mb-3">
               Our Mission
             </h3>
             <p className="text-lg text-gray-200 leading-relaxed border-l-4 border-sky-400 pl-4">

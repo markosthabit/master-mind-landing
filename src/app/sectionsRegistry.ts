@@ -63,8 +63,8 @@ const sections: Section[] = [
     subsections: [
       { id: "intro", Component: AboutIntro },
       { id: "history", Component: AboutHistory },
-      { id: "vision", Component: AboutVision },
       { id: "weare", Component: AboutWeAre },
+      { id: "vision", Component: AboutVision },
     ],
   },
   {
