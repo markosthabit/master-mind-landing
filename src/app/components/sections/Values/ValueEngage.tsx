@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function ValueEngage() {
   return (
     <SectionWrapper id="healthcare-engagement">
-      <div className="py-8 px-6 scrollbar-modern relative">
+      <div className="py-2 px-6 scrollbar-modern relative">
         <Image
           src="/images/left-overlay.png"
           alt=""
@@ -11,15 +11,12 @@ export default function ValueEngage() {
           height={700}
           className="absolute right-23/32 -top-1/8 object-contain pointer-events-none -z-50"
         />
-        <div className="max-w-8xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
             {/* Left Side - Main Heading */}
             <div className="text-left">
               <h1
-                className="font-bold leading-tight"
-                style={{
-                  fontSize: "clamp(2.5rem, 6vw, 4rem)",
-                }}
+                className="font-bold leading-tight text-6xl"
               >
                 <span style={{ color: "var(--color-softWhite)" }}>We </span>
                 <span style={{ color: "var(--color-softWhite)" }}>engage</span>
@@ -90,7 +87,7 @@ export default function ValueEngage() {
                   Patient
                 </h3>
                 <p
-                  className="leading-relaxed border-l-4 p-2 border-lightBlue"
+                  className="leading-relaxed border-l-4 p-1 border-lightBlue"
                   style={{
                     fontSize: "clamp(0.875rem, 2vw, 1rem)",
                     color: "var(--color-softWhite)",
@@ -115,7 +112,7 @@ export default function ValueEngage() {
                   Physician
                 </h3>
                 <p
-                  className="leading-relaxed border-l-4 p-2 border-lightBlue"
+                  className="leading-relaxed border-l-4 p-1 border-lightBlue"
                   style={{
                     fontSize: "clamp(0.875rem, 2vw, 1rem)",
                     color: "var(--color-softWhite)",
@@ -141,7 +138,7 @@ export default function ValueEngage() {
                   Educator
                 </h3>
                 <p
-                  className="leading-relaxed border-l-4 p-2 border-lightBlue"
+                  className="leading-relaxed border-l-4 p-1 border-lightBlue"
                   style={{
                     fontSize: "clamp(0.875rem, 2vw, 1rem)",
                     color: "var(--color-softWhite)",
@@ -166,7 +163,7 @@ export default function ValueEngage() {
                   Pharmacist
                 </h3>
                 <p
-                  className="leading-relaxed border-l-4 p-2 border-lightBlue"
+                  className="leading-relaxed border-l-4 p-1 border-lightBlue"
                   style={{
                     fontSize: "clamp(0.875rem, 2vw, 1rem)",
                     color: "var(--color-softWhite)",
