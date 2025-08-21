@@ -2,7 +2,7 @@ import SectionWrapper from "../SectionWrapper";
 import Image from "next/image";
 export default function Home() {
   return (
-    <SectionWrapper id="home" className="relative container overflow-hidden" >
+    <SectionWrapper id="home" className="relative w-screen overflow-hidden" >
     {/* Right Overlay */}
       <Image
         src="/images/comma.png"
