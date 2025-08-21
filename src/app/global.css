@@ -2,9 +2,10 @@
 
 @tailwind utilities;
 @theme{
-  --color-*: initial;
   --color-darkBlue: #070C52;    /* midnight blue*/
   --color-lightPurple: #BEB6FF;   /* melrose */
+  --color-darkPurple: #240E3D;
+  --color-mediumPurple: #690088;
   --color-lightBlue: #5BB0FF;    /* malibu */
   --color-softWhite: #e6e6e6;
   

@@ -43,7 +43,7 @@ export default function Navbar() {
               href={`#${id}`}
               className={clsx(
                 "uppercase font-medium transition",
-                active === id ? "text-teal-600" : "text-gray-400"
+                active === id ? "text-lightPurple" : "text-softWhite"
               )}
             >
               {id}
