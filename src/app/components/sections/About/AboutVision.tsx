@@ -14,10 +14,9 @@ export default function AboutVision() {
   return (
     <section
       id="about-vision"
-      className="min-h-screen flex flex-col items-center justify-center px-6 py-20 text-white"
+      className="min-h-screen flex flex-col items-center justify-center px-4 py-10 sm:px-6 sm:py-16 md:px-12 md:py-20 text-white"
     >
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 w-full max-w-6xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 w-full max-w-xl sm:max-w-2xl md:max-w-4xl lg:max-w-6xl">
         {/* Left text */}
         <motion.div
           variants={textVariant}
@@ -26,17 +25,17 @@ export default function AboutVision() {
           custom={1}
           viewport={{ once: false, amount: 0.4 }}
         >
-          <h2 className="text-5xl font-extrabold leading-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight">
             <span className="text-sky-400">SMART</span> <br />
             STRATEGIES, <br />
             <span className="text-sky-400">BRILLIANT</span> <br />
             RESULTS
           </h2>
-          <div className="mt-6 h-[5px] w-3/4 bg-sky-400"></div>
+          <div className="mt-4 sm:mt-6 h-[3px] sm:h-[5px] w-2/3 sm:w-3/4 bg-sky-400"></div>
         </motion.div>
 
         {/* Right content */}
-        <div className="space-y-12">
+        <div className="space-y-8 sm:space-y-10 md:space-y-12">
           {/* Vision */}
           <motion.div
             variants={textVariant}
@@ -45,10 +44,10 @@ export default function AboutVision() {
             custom={2}
             viewport={{ once: false, amount: 0.4 }}
           >
-            <h3 className="text-5xl font-extrabold text-sky-400 mb-3">
+            <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-sky-400 mb-2 sm:mb-3">
               Our Vision
             </h3>
-            <p className="text-lg text-gray-200 leading-relaxed border-l-4 border-sky-400 pl-4">
+            <p className="text-base sm:text-lg md:text-xl text-gray-200 leading-relaxed border-l-4 border-sky-400 pl-3 sm:pl-4">
               To set the global standard for innovation in marketing where
               customer insight fuels bold design, flawless execution, and
               transformative brand experiences across every medium.
@@ -63,10 +62,10 @@ export default function AboutVision() {
             custom={3}
             viewport={{ once: false, amount: 0.4 }}
           >
-            <h3 className="text-5xl font-extrabold text-sky-400 mb-3">
+            <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-sky-400 mb-2 sm:mb-3">
               Our Mission
             </h3>
-            <p className="text-lg text-gray-200 leading-relaxed border-l-4 border-sky-400 pl-4">
+            <p className="text-base sm:text-lg md:text-xl text-gray-200 leading-relaxed border-l-4 border-sky-400 pl-3 sm:pl-4">
               To empower brands through customer-centric creativity delivering
               tailored design, premium production, and precision-crafted print
               solutions that resonate deeply with audiences and drive lasting
