@@ -11,14 +11,14 @@ export default function Media() {
           alt=""
           width={728}
           height={728}
-          className="absolute  -right-5/32 object-contain pointer-events-none transform -scale-x-100"
+          className="absolute -top-1/32 -right-6/32 object-contain pointer-events-none transform -scale-x-100 -z-10"
         />
 <Image
           src="/images/cloud-circle.webp"
           alt=""
           width={512}
           height={512}
-          className="absolute top-3/8  -right-5/32 object-contain pointer-events-none -z-10"
+          className="absolute top-3/8  -right-5/32 object-contain pointer-events-none -z-20"
         />
         <Image
           src="/images/cloud-rainbow.webp"
