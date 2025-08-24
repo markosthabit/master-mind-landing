@@ -14,7 +14,7 @@ export default function ValueBelieve() {
       >
         <div className="max-w-xl sm:max-w-2xl md:max-w-3xl lg:max-w-4xl mx-auto text-center">
           <h1
-            className="font-bold mb-8 sm:mb-10 md:mb-12"
+            className="font-bold mb-8 sm:mb-6 md:mb-12"
             style={{
               fontSize: 'clamp(2rem, 6vw, 4rem)',
               background: `linear-gradient(135deg, var(--color-lightBlue) 0%, var(--color-lightPurple) 100%)`,
@@ -28,7 +28,7 @@ export default function ValueBelieve() {
 
           {/* Main Value Statement */}
           <p
-            className="leading-relaxed mb-8 sm:mb-12 md:mb-14 max-w-md sm:max-w-lg md:max-w-2xl lg:max-w-3xl mx-auto"
+            className="leading-relaxed mb-8 sm:mb-10 md:mb-14 max-w-md sm:max-w-lg md:max-w-2xl lg:max-w-3xl mx-auto"
             style={{
               fontSize: 'clamp(1rem, 2.5vw, 1.5rem)',
               color: 'var(--color-softWhite)',
@@ -41,7 +41,7 @@ export default function ValueBelieve() {
           </p>
 
           {/* Value Items */}
-          <div className="space-y-2 sm:space-y-4 md:space-y-6">
+          <div className="space-y-2 sm:space-y-3 md:space-y-6">
             {/* Agile Methodologies */}
             <div
               className="leading-relaxed"
