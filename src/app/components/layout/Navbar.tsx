@@ -23,7 +23,7 @@ export default function Navbar() {
             setActive(id);
           }
         },
-        { threshold: 0.6 }
+      { threshold: 0.3, rootMargin: "-4rem 0px 0px 0px" } // Adjust for navbar height
       );
       obs.observe(el);
       observers.push(obs);

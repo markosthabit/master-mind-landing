@@ -55,7 +55,7 @@ export default function CarouselSection({ id, subsections }: CarouselSectionProp
 
   return (
     <div
-      className="h-[calc(100vh-4rem)] w-full relative"
+      className="h-[calc(100vh-4rem)] w-full relative" // Add padding-top to offset navbar
       onClick={handleClick}
       role="button"
       tabIndex={0}
