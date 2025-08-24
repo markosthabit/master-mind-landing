@@ -28,7 +28,7 @@ export default function ValueBelieve() {
 
           {/* Main Value Statement */}
           <p
-            className="leading-relaxed mb-10 sm:mb-14 md:mb-16 max-w-md sm:max-w-lg md:max-w-2xl lg:max-w-3xl mx-auto"
+            className="leading-relaxed mb-8 sm:mb-12 md:mb-14 max-w-md sm:max-w-lg md:max-w-2xl lg:max-w-3xl mx-auto"
             style={{
               fontSize: 'clamp(1rem, 2.5vw, 1.5rem)',
               color: 'var(--color-softWhite)',
@@ -41,7 +41,7 @@ export default function ValueBelieve() {
           </p>
 
           {/* Value Items */}
-          <div className="space-y-8 sm:space-y-10 md:space-y-12">
+          <div className="space-y-2 sm:space-y-4 md:space-y-6">
             {/* Agile Methodologies */}
             <div
               className="leading-relaxed"
