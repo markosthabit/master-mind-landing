@@ -1,62 +1,98 @@
 import Image from "next/image";
+
 // components/sections/Contact.tsx
 export default function Contact() {
   return (
-    
-    <div className="relative text-left w-28/32 h-28/32 space-y-4 rounded-4xl bg-linear-65 from-darkPurple to-mediumPurple p-32 overflow-hidden ">
-      {/* Overlay  Right */}
+    <div className="relative text-left w-full max-w-7xl mx-auto space-y-4 md:space-y-6 lg:space-y-8 rounded-2xl md:rounded-3xl lg:rounded-4xl bg-linear-65 from-darkPurple to-mediumPurple p-6 md:p-16 lg:p-32 overflow-hidden min-h-[400px] md:min-h-[500px] lg:min-h-[600px]">
+      {/* Overlay Right - Phone Mind */}
       <Image
         src="/images/phone-mind.png"
         alt=""
         width={216}
         height={216}
-        className="absolute top-5/32 right-4/32 object-cover pointer-events-none z-30"
+        className="absolute top-4 right-4 md:top-8 md:right-8 lg:top-5/32 lg:right-4/32 w-16 h-16 md:w-24 md:h-24 lg:w-auto lg:h-auto object-contain pointer-events-none z-30"
       />
+      
+      {/* Large Right Overlay */}
       <Image
         src="/images/large-left-overlay.png"
         alt=""
         width={1200}
         height={728}
-        className="absolute right-1/32 bottom-10/32 object-contain  pointer-events-none"
+        className="absolute right-0 bottom-0 md:right-4 md:bottom-8 lg:right-1/32 lg:bottom-10/32 w-32 h-auto md:w-48 md:h-auto lg:w-auto lg:h-auto object-contain pointer-events-none opacity-30 md:opacity-50 lg:opacity-100"
       />
-      {/* Ovelay Left */}
+      
+      {/* Cloud Rainbow Overlay */}
       <Image
         src="/images/cloud-rainbow.png"
         alt=""
         width={728}
         height={728}
-        className="absolute -top-14/32 -left-8/32 object-contain pointer-events-none z-10"
+        className="absolute -top-4 -left-2 md:-top-8 md:-left-4 lg:-top-14/32 lg:-left-8/32 w-20 h-20 md:w-28 md:h-28 lg:w-auto lg:h-auto object-contain pointer-events-none z-10 opacity-40 md:opacity-60 lg:opacity-100"
       />
+      
+      {/* Logo */}
       <Image
         src="/images/logo.png"
         alt=""
         width={50}
         height={50}
-        className="absolute bottom-1/32 left-3/32 object-contain pointer-events-none z-10"
+        className="absolute bottom-4 left-4 md:bottom-6 md:left-6 lg:bottom-1/32 lg:left-3/32 w-10 h-10 md:w-12 md:h-12 lg:w-auto lg:h-auto object-contain pointer-events-none z-10"
       />
 
-      <h1 className="text-5xl font-bold text-softWhite">Get in Touch</h1>
-      <div className="grid grid-flow-col gird-cols-2 w-3/4">
-        <ul className="col-span-1">
-          <li className="p-8">
-            <h2 className="text-2xl font-bold">Phone Number</h2>
-            <p>+965 9979 55 98</p>
-          </li>
-          <li className="p-8">
-            <h2 className="text-2xl font-bold">Website</h2>
-            <p>www.mastermindmina.com</p>
-          </li>
-        </ul>
-        <ul className="col-span-1">
-          <li className="p-8">
-            <h2 className="text-2xl font-bold">Email</h2>
-            <p>info@mastermindmina.com</p>
-          </li>
-          <li className="p-8">
-            <h2 className="text-2xl font-bold">Social Media</h2>
-            <p>@mastermindmina</p>
-          </li>
-        </ul>
+      {/* Main Content */}
+    <div className="relative z-40 pl-0 md:pr-[220px] lg:pr-[300px]">
+        <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-softWhite mb-6 md:mb-8 lg:mb-12 relative z-50">
+          Get in Touch
+        </h1>
+        
+        {/* Contact Info Grid */}
+        <div className="w-full max-w-4xl relative z-50">
+          {/* Mobile Layout - Single Column */}
+          <div className="block md:hidden space-y-4">
+            <div className="bg-white/5 rounded-xl p-4 backdrop-blur-sm">
+              <h2 className="text-lg font-bold text-softWhite mb-2">Phone Number</h2>
+              <p className="text-softWhite/80">+965 9979 55 98</p>
+            </div>
+            <div className="bg-white/5 rounded-xl p-4 backdrop-blur-sm">
+              <h2 className="text-lg font-bold text-softWhite mb-2">Email</h2>
+              <p className="text-softWhite/80">info@mastermindmina.com</p>
+            </div>
+            <div className="bg-white/5 rounded-xl p-4 backdrop-blur-sm">
+              <h2 className="text-lg font-bold text-softWhite mb-2">Website</h2>
+              <p className="text-softWhite/80">www.mastermindmina.com</p>
+            </div>
+            <div className="bg-white/5 rounded-xl p-4 backdrop-blur-sm">
+              <h2 className="text-lg font-bold text-softWhite mb-2">Social Media</h2>
+              <p className="text-softWhite/80">@mastermindmina</p>
+            </div>
+          </div>
+
+          {/* Tablet & Desktop Layout - Two Columns */}
+          <div className="hidden md:grid md:grid-cols-2 gap-6 lg:gap-8">
+            <div className="space-y-6 lg:space-y-8">
+              <div className="p-4 lg:p-8">
+                <h2 className="text-xl lg:text-2xl font-bold text-softWhite mb-2">Phone Number</h2>
+                <p className="text-softWhite/80 text-base lg:text-lg">+965 9979 55 98</p>
+              </div>
+              <div className="p-4 lg:p-8">
+                <h2 className="text-xl lg:text-2xl font-bold text-softWhite mb-2">Website</h2>
+                <p className="text-softWhite/80 text-base lg:text-lg">www.mastermindmina.com</p>
+              </div>
+            </div>
+            
+            <div className="space-y-6 lg:space-y-8">
+              <div className="p-4 lg:p-8">
+                <h2 className="text-xl lg:text-2xl font-bold text-softWhite mb-2">Email</h2>
+                <p className="text-softWhite/80 text-base lg:text-lg">info@mastermindmina.com</p>
+              </div>
+              <div className="p-4 lg:p-8">
+                <h2 className="text-xl lg:text-2xl font-bold text-softWhite mb-2">Social Media</h2>
+                <p className="text-softWhite/80 text-base lg:text-lg">@mastermindmina</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

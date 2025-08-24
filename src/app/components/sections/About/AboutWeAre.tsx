@@ -33,6 +33,8 @@ export default function AboutTeam() {
         We don’t just communicate — we connect. <br />
         We don’t just deliver — we elevate.
       </motion.p>
+
+      
     </SectionWrapper>
   );
 }

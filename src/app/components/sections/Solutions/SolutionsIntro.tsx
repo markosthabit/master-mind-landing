@@ -35,16 +35,11 @@ export default function Solutions() {
           </span>
         </p>
       </div>
-
-      <div className="pt-8 md:pt-2">
-        <ul className="flex flex-wrap justify-center items-center gap-4 sm:gap-x-8 md:gap-x-48 gap-y-16 md:gap-y-36 p-6">
-          <li className="w-[150px] sm:w-[200px] md:w-[250px]">
-            {" "}
-            {/* Responsive widths */}
-            <CrescentHeader
-              as="h2"
-              className="text-xl sm:text-2xl md:text-3xl font-bold text-center"
-            >
+      
+      <div className="pt-6 sm:pt-12">
+        <ul className="flex flex-wrap justify-center items-center gap-2 sm:gap-4 md:gap-x-12 gap-y-6 md:gap-y-12 p-2">
+          <li className="w-[150px] sm:w-[200px] md:w-[250px]"> {/* Responsive widths */}
+            <CrescentHeader as="h2" className="text-xl sm:text-2xl md:text-3xl font-bold text-center">
               BRANDING
             </CrescentHeader>
           </li>
@@ -68,7 +63,8 @@ export default function Solutions() {
             </CrescentHeader>
           </li>
         </ul>
-        <ul className="flex flex-wrap justify-center items-center gap-4 sm:gap-x-8 md:gap-x-48 gap-y-16 md:gap-y-36 p-6">
+  <ul className="flex flex-wrap justify-center items-center gap-2 sm:gap-4 md:gap-x-12 gap-y-6 md:gap-y-12 p-2">
+          
           <li className="w-[150px] sm:w-[200px] md:w-[250px]">
             <CrescentHeader
               as="h2"
