@@ -9,21 +9,21 @@ export default function AboutHistroy() {
       className=" text-center py-10 px-4 sm:py-16 sm:px-8 md:py-20 md:px-16 lg:px-32"
 >
       <Image
-        src="/images/left-overlay.png"
+        src="/images/left-overlay.webp"
         alt=""
         width={512}
         height={512}
         className="absolute -right-7/32 -top-3/32 object-contain pointer-events-none -rotate-12 -z-50"
       />
             <Image
-        src="/images/left-overlay.png"
+        src="/images/left-overlay.webp"
         alt=""
         width={512}
         height={512}
         className="absolute -right-5/32 -bottom-24/32 object-contain pointer-events-none rotate-45 -z-50"
       />
           <Image
-                src="/images/left-overlay.png"
+                src="/images/left-overlay.webp"
                 alt=""
                 width={700}
                 height={700}

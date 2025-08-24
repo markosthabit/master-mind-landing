@@ -5,14 +5,14 @@ export default function Home() {
     <SectionWrapper id="home" className="relative w-screen overflow-hidden" >
     {/* Right Overlay */}
       <Image
-        src="/images/comma.png"
+        src="/images/comma.webp"
         alt=""
         width={256}
         height={256}
         className="absolute top-17/32 right-4/32 object-contain pointer-events-none z-10 "
       />
       <Image
-        src="/images/sparse-object.png"
+        src="/images/sparse-object.webp"
         alt=""
         width={1024}
         height={1024}
@@ -20,14 +20,14 @@ export default function Home() {
       />
       {/* Left Overlay */}
       <Image
-        src="/images/sparse-object.png"
+        src="/images/sparse-object.webp"
         alt=""
         width={1024}
         height={1024}
         className="absolute -top-11/32 -left-14/32 object-cover pointer-events-none z-10"
       />
       <Image
-        src="/images/comma.png"
+        src="/images/comma.webp"
         alt=""
         width={256}
         height={256}

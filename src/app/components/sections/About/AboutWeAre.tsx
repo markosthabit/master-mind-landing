@@ -10,14 +10,14 @@ export default function AboutTeam() {
       className="relative text-left px-16 justify-start items-center"
     >
       <Image
-        src="/images/top-right-overlay.png"
+        src="/images/top-right-overlay.webp"
         alt=""
         width={728}
         height={728}
         className="absolute -top-128 -right-48 object-contain pointer-events-none -z-10"
       />
       <Image
-        src="/images/left-overlay.png"
+        src="/images/left-overlay.webp"
         alt=""
         width={700}
         height={700}

@@ -7,7 +7,7 @@ export default function Writing() {
       <div className="grid grid-cols-12 gap-6">
             {/* Overlay  Top */}
         <Image
-          src="/images/large-top-overlay.png"
+          src="/images/large-top-overlay.webp"
           alt=""
           width={800}
           height={800}
@@ -15,21 +15,21 @@ export default function Writing() {
         />
         {/* Overlay  Right */}
         <Image
-          src="/images/doctor-smiling.png"
+          src="/images/doctor-smiling.webp"
           alt=""
           width={512}
           height={512}
           className="absolute top-9/32 right-0 object-contain pointer-events-none -z-20"
         />
         <Image
-          src="/images/cloud-rainbow.png"
+          src="/images/cloud-rainbow.webp"
           alt=""
           width={728}
           height={728}
           className="absolute top-17/32 -right-6/32 object-contain pointer-events-none transform -scale-x-100 -z-10"
         />
         <Image
-          src="/images/cloud-circle.png"
+          src="/images/cloud-circle.webp"
           alt=""
           width={512}
           height={512}
@@ -38,7 +38,7 @@ export default function Writing() {
 
         {/* Overlay Left  */}
         <Image
-          src="/images/left-overlay.png"
+          src="/images/left-overlay.webp"
           alt=""
           width={700}
           height={700}

@@ -7,21 +7,21 @@ export default function Media() {
       <div className="container mx-auto px-4">
         {/* Overlay  Right */}
         <Image
-          src="/images/two-people-in-VR.png"
+          src="/images/two-people-in-VR.webp"
           alt=""
           width={728}
           height={728}
           className="absolute  -right-5/32 object-contain pointer-events-none transform -scale-x-100"
         />
 <Image
-          src="/images/cloud-circle.png"
+          src="/images/cloud-circle.webp"
           alt=""
           width={512}
           height={512}
           className="absolute top-3/8  -right-5/32 object-contain pointer-events-none -z-10"
         />
         <Image
-          src="/images/cloud-rainbow.png"
+          src="/images/cloud-rainbow.webp"
           alt=""
           width={728}
           height={728}
@@ -31,7 +31,7 @@ export default function Media() {
 
         {/* Overlay Left  */}
         <Image
-          src="/images/large-left-overlay.png"
+          src="/images/large-left-overlay.webp"
           alt=""
           width={2400}
           height={2400}

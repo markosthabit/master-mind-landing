@@ -6,7 +6,7 @@ export default function Contact() {
     <div className="relative text-left w-full max-w-7xl mx-auto space-y-4 md:space-y-6 lg:space-y-8 rounded-2xl md:rounded-3xl lg:rounded-4xl bg-linear-65 from-darkPurple to-mediumPurple p-6 md:p-16 lg:p-32 overflow-hidden min-h-[400px] md:min-h-[500px] lg:min-h-[600px]">
       {/* Overlay Right - Phone Mind */}
       <Image
-        src="/images/phone-mind.png"
+        src="/images/phone-mind.webp"
         alt=""
         width={216}
         height={216}
@@ -15,7 +15,7 @@ export default function Contact() {
       
       {/* Large Right Overlay */}
       <Image
-        src="/images/large-left-overlay.png"
+        src="/images/large-left-overlay.webp"
         alt=""
         width={1200}
         height={728}
@@ -24,7 +24,7 @@ export default function Contact() {
       
       {/* Cloud Rainbow Overlay */}
       <Image
-        src="/images/cloud-rainbow.png"
+        src="/images/cloud-rainbow.webp"
         alt=""
         width={728}
         height={728}
@@ -33,7 +33,7 @@ export default function Contact() {
       
       {/* Logo */}
       <Image
-        src="/images/logo.png"
+        src="/images/logo.webp"
         alt=""
         width={50}
         height={50}

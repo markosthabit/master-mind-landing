@@ -8,7 +8,7 @@ export default function EventPlanning() {
       <div className="grid grid-cols-12 gap-6">
         {/* Overlay  Right */}
         <Image
-          src="/images/top-right-overlay.png"
+          src="/images/top-right-overlay.webp"
           alt=""
           width={1024}
           height={1024}
@@ -16,7 +16,7 @@ export default function EventPlanning() {
         />
         {/* Overlay Left  */}
         <Image
-          src="/images/speaker.png"
+          src="/images/speaker.webp"
           alt=""
           width={480}
           height={1024}

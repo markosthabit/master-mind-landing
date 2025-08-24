@@ -23,7 +23,7 @@ export default function Navbar() {
             setActive(id);
           }
         },
-      { threshold: 0.3, rootMargin: "-4rem 0px 0px 0px" } // Adjust for navbar height
+      { threshold: 0.3, rootMargin: "-64px 0px 0px 0px" } // Adjust for navbar height
       );
       obs.observe(el);
       observers.push(obs);
@@ -53,7 +53,7 @@ export default function Navbar() {
           {/* Logo Icon */}
           <div className="w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center ml-2 sm:ml-[0.5cm]">
             <Image 
-              src="/images/logo.png" 
+              src="/images/logo.webp" 
               alt="logo" 
               width={90} 
               height={90}

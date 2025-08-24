@@ -7,21 +7,21 @@ export default function Engagement() {
       <div className="grid grid-cols-12 gap-6">
         {/* Overlay  Right */}
         <Image
-          src="/images/phone.png"
+          src="/images/phone.webp"
           alt=""
           width={400}
           height={400}
           className="absolute top-9/32 right-5/32 object-contain pointer-events-none transform"
         />
         <Image
-          src="/images/cloud-circle.png"
+          src="/images/cloud-circle.webp"
           alt=""
           width={512}
           height={512}
           className="absolute top-3/8  -right-5/32 object-contain pointer-events-none -z-10"
         />
         <Image
-          src="/images/cloud-rainbow.png"
+          src="/images/cloud-rainbow.webp"
           alt=""
           width={728}
           height={728}
@@ -30,7 +30,7 @@ export default function Engagement() {
 
         {/* Overlay Left  */}
         <Image
-          src="/images/left-overlay.png"
+          src="/images/left-overlay.webp"
           alt=""
           width={700}
           height={700}

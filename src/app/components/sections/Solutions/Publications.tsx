@@ -7,14 +7,14 @@ export default function Publications() {
       <div className="grid grid-cols-12 gap-6">
                 {/* Overlay  Right */}
                         <Image
-                          src="/images/doctor-pointing.png"
+                          src="/images/doctor-pointing.webp"
                           alt=""
                           width={640}
                           height={640}
                           className="absolute top-4/32 -right-3/32 object-contain pointer-events-none transform -scale-x-100 -z-10"
                         />
                         <Image
-                          src="/images/cloud-rainbow.png"
+                          src="/images/cloud-rainbow.webp"
                           alt=""
                           width={728}
                           height={728}
@@ -23,7 +23,7 @@ export default function Publications() {
                 
                         {/* Overlay Left  */}
                         <Image
-                          src="/images/left-overlay.png"
+                          src="/images/left-overlay.webp"
                           alt=""
                           width={700}
                           height={700}

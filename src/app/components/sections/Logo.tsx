@@ -10,7 +10,7 @@ export default function Logo() {
     >
       {/* Overlay Top Right */}
       <Image
-        src="/images/top-right-overlay.png"
+        src="/images/top-right-overlay.webp"
         alt=""
         width={728}
         height={728}
@@ -19,7 +19,7 @@ export default function Logo() {
 
       {/* Overlay Left Half */}
       <Image
-        src="/images/left-overlay.png"
+        src="/images/left-overlay.webp"
         alt=""
         width={1200}
         height={1200}
@@ -30,7 +30,7 @@ export default function Logo() {
       <div className="relative z-10">
         <div className="flex flex-col items-center text-center gap-4 md:flex-row md:items-center md:text-left md:gap-6">
           <Image
-            src="/images/logo.png"
+            src="/images/logo.webp"
             alt="Logo"
             width={164}
             height={164}

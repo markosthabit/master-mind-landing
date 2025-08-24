@@ -7,14 +7,14 @@ export default function PostEvent() {
       <div className="grid grid-cols-12 gap-6">
         {/* Overlay  Right */}
                 <Image
-                  src="/images/speaker-pc.png"
+                  src="/images/speaker-pc.webp"
                   alt=""
                   width={800}
                   height={1024}
                   className="absolute right-0 top-0 h-screen object-cover pointer-events-none -z-10"
         />        
                 <Image
-                  src="/images/cloud-rainbow.png"
+                  src="/images/cloud-rainbow.webp"
                   alt=""
                   width={512}
                   height={512}
@@ -22,7 +22,7 @@ export default function PostEvent() {
         />
            {/* Overlay Left Half */}
                 <Image
-                  src="/images/left-overlay.png"
+                  src="/images/left-overlay.webp"
                   alt=""
                   width={700}
                   height={700}

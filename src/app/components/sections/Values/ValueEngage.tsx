@@ -5,7 +5,7 @@ export default function ValueEngage() {
     <SectionWrapper id="healthcare-engagement">
       <div className="py-2 px-6 scrollbar-modern relative">
         <Image
-          src="/images/left-overlay.png"
+          src="/images/left-overlay.webp"
           alt=""
           width={700}
           height={700}

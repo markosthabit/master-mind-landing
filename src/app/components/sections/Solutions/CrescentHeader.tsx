@@ -17,7 +17,7 @@ const CrescentHeader = ({
     <div className="relative w-full" style={{ height: '164px' }}> {/* Fixed height matching image */}
       <div className="absolute left-0 top-1/2 -translate-y-1/2 z-0">
         <Image 
-          src="/images/crescent-moon.png"
+          src="/images/crescent-moon.webp"
           alt="Crescent Moon"
           width={164} 
           height={164} 

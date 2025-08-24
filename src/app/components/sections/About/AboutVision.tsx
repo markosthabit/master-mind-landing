@@ -17,14 +17,14 @@ export default function AboutVision() {
       className="min-h-screen flex flex-col items-center justify-center px-4 py-10 sm:px-6 sm:py-16 md:px-12 md:py-20 text-white"
     >
       <Image
-        src="/images/top-right-overlay.png"
+        src="/images/top-right-overlay.webp"
         alt=""
         width={728}
         height={728}
         className="absolute -top-128 -right-48 object-contain pointer-events-none -z-10"
       />
       <Image
-        src="/images/left-overlay.png"
+        src="/images/left-overlay.webp"
         alt=""
         width={700}
         height={700}

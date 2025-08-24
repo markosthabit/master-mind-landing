@@ -8,7 +8,7 @@ export default function AboutIntro() {
   return (
     <SectionWrapper id="about-intro" className="text-center">
           <Image
-                src="/images/left-overlay.png"
+                src="/images/left-overlay.webp"
                 alt=""
                 width={700}
                 height={700}

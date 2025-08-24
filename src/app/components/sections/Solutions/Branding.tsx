@@ -10,21 +10,21 @@ export default function Branding() {
         {/* Overlay Right */}
         {/* Responsive overlays: smaller and top-right on mobile, original on md+ */}
         <Image
-          src="/images/star-ballon.png"
+          src="/images/star-ballon.webp"
           alt=""
           width={200}
           height={200}
           className="hidden sm:absolute sm:right-1/16 sm:top-3/16 sm:block object-contain pointer-events-none blur-xs rotate-45"
         />
         <Image
-          src="/images/star-ballon.png"
+          src="/images/star-ballon.webp"
           alt=""
           width={400}
           height={400}
           className="hidden sm:absolute sm:-right-3/32 sm:top-1/32 sm:block object-contain pointer-events-none"
         />
         <Image
-          src="/images/star-ballon.png"
+          src="/images/star-ballon.webp"
           alt=""
           width={300}
           height={300}
@@ -32,7 +32,7 @@ export default function Branding() {
         />
         {/* Small screen overlay */}
         <Image
-          src="/images/star-ballon.png"
+          src="/images/star-ballon.webp"
           alt=""
           width={60}
           height={60}
@@ -40,7 +40,7 @@ export default function Branding() {
         />
         {/* Overlay Left Half */}
         <Image
-          src="/images/left-overlay.png"
+          src="/images/left-overlay.webp"
           alt=""
           width={700}
           height={700}

@@ -7,7 +7,7 @@ export default function Solutions() {
     <div className="text-center space-y-4">
       {/* Overlay  Right */}
       <Image
-        src="/images/top-right-overlay.png"
+        src="/images/top-right-overlay.webp"
         alt=""
         width={728}
         height={728}
@@ -15,7 +15,7 @@ export default function Solutions() {
       />
       {/* Overlay Left  */}
       <Image
-        src="/images/large-left-overlay.png"
+        src="/images/large-left-overlay.webp"
         alt=""
         width={2400}
         height={2400}
