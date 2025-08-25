@@ -12,6 +12,7 @@ export default function Logo() {
       <Image
         src="/images/top-right-overlay.webp"
         alt=""
+        loading="eager"
         width={728}
         height={728}
         className="absolute -top-128 -right-48 object-contain pointer-events-none"
@@ -21,6 +22,7 @@ export default function Logo() {
       <Image
         src="/images/left-overlay.webp"
         alt=""
+        loading="eager"
         width={1200}
         height={1200}
         className="absolute right-2/4 -top-64 object-contain pointer-events-none opacity-60"
@@ -33,6 +35,7 @@ export default function Logo() {
             src="/images/logo.webp"
             alt="Logo"
             width={164}
+            loading="eager"
             height={164}
             className="object-contain w-24 h-24 md:w-[164px] md:h-[164px]"
           />

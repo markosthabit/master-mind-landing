@@ -57,6 +57,7 @@ export default function Navbar() {
               alt="logo" 
               width={90} 
               height={90}
+              loading="eager"
               className="w-full h-full object-contain"
             />
           </div>
