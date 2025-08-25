@@ -1,15 +1,18 @@
 import Image from "next/image";
 
-// components/sections/Contact.tsx
 export default function Contact() {
   return (
-    <div className="relative text-left w-full max-w-7xl mx-auto space-y-4 md:space-y-6 lg:space-y-8 rounded-2xl md:rounded-3xl lg:rounded-4xl bg-linear-65 from-darkPurple to-mediumPurple p-6 md:p-16 lg:p-32 overflow-hidden min-h-[400px] md:min-h-[500px] lg:min-h-[600px]">
+    <div
+      id="contact"
+      className="relative text-left w-full max-w-7xl mx-auto space-y-4 md:space-y-6 lg:space-y-8 rounded-2xl md:rounded-3xl lg:rounded-4xl bg-linear-65 from-darkPurple to-mediumPurple p-4 md:p-8 lg:p-12 overflow-hidden min-h-[300px] md:min-h-[350px] lg:min-h-[400px]"
+      style={{ scrollMarginTop: "4rem" }}
+    >
       {/* Overlay Right - Phone Mind */}
       <Image
         src="/images/phone-mind.webp"
         alt=""
-        width={216}
-        height={216}
+        width={160}
+        height={160}
         className="absolute top-4 right-4 md:top-8 md:right-8 lg:top-5/32 lg:right-4/32 w-16 h-16 md:w-24 md:h-24 lg:w-auto lg:h-auto object-contain pointer-events-none z-30"
       />
       
@@ -37,11 +40,11 @@ export default function Contact() {
         alt=""
         width={50}
         height={50}
-        className="absolute bottom-4 left-4 md:bottom-6 md:left-6 lg:bottom-1/32 lg:left-3/32 w-10 h-10 md:w-12 md:h-12 lg:w-auto lg:h-auto object-contain pointer-events-none z-10"
+        className="absolute bottom-4 left-4 md:bottom-6 md:left-6 lg:-bottom-1/32 lg:left-2/32 w-10 h-10 md:w-12 md:h-12 lg:w-auto lg:h-auto object-contain pointer-events-none z-10"
       />
 
       {/* Main Content */}
-    <div className="relative z-40 pl-0 md:pr-[220px] lg:pr-[300px]">
+      <div className="relative z-40 pl-0 md:pr-[220px] lg:pr-[300px]">
         <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-softWhite mb-6 md:mb-8 lg:mb-12 relative z-50">
           Get in Touch
         </h1>
